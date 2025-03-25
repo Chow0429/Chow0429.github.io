@@ -573,7 +573,7 @@
                 case 'human-mistake': // 第3组: Human来源+错误更正
                     loadHumanMistakeGroup();
                     break;
-                case 'AI-mistake': // 第4组: AI来源+错误更正
+                case 'ai-mistake': // 第4组: AI来源+错误更正
                     loadAIMistakeGroup();
                     break;
                 case 'random': // 第5组: 全随机内容
@@ -636,7 +636,7 @@
 
                 // 检查是否是官方账号
                 if (isOfficialAccount(modifiedWeibo.username)) {
-                    modifiedWeibo.username += ' AI助手';
+                    modifiedWeibo.username += 'AI助手';
                 }
         
                 return modifiedWeibo;
